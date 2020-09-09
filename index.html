@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learn - 2</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="./all.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="header-center">
+
+            <div class="header-text">
+                <p>Available Budget in <span class="current-date"></span>:</p>
+                <h1 id="total-budget">+ 0</h1>
+            </div>
+        
+            <div class="header-budget">
+                <div class="income-div">
+                    <p>Income</p>
+                    <span>
+                        <p class="income">+ 0</p>
+                    </span>
+                </div>
+                <div class="expense-div">
+                    <p>Expense</p>
+                    <span>
+                        <p class="expense">+ 0</p>
+                        <p class="expense-perc exp_per"> - </p>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="input-section">
+        <div class="input-center">
+
+            <select class="select">
+                <option value="inc">+</option>
+                <option value="exp">-</option>
+            </select>
+
+            <input class="main-input incomeActive" type="text" value="" id="description" placeholder="Add description">
+            <input class="main-input incomeActive" type="text" value="" id="amount" placeholder="Value">
+            <button class="btn"><i class="fas fa-check"></i></button>
+        
+        </div>
+    </section>
+
+    <section class="bottom">
+        <div class="bottom-center">
+
+            <section class="bottom bottom-income">
+                <h1 class="bottom-h1">Income</h1>
+
+                <article class="item-container inc">
+
+                    <!-- <div class="item income-item">
+                        <p class="item-name">BLabla</p>
+                        <span class="income-item-span item-span">
+                            <p class="item-price income-item-price">0</p>
+                            <button><i class="fas fa-delete delete-item"></i></button>
+                        </span>
+                    </div> -->
+
+                </article>
+
+            </section>
+
+            <section class="bottom bottom-expense">
+                <h1 class="bottom-h1">Expense</h1>
+
+                <article class="item-container expense-container exp">
+
+                        <!-- <div class="item expense-item">
+                            <p class="remove-item-name">BLabla</p>
+                            <span class="expense-item-span item-span">
+                                <p class="item-price expense-item-price">0</p>
+                                <p class="expense-percent exp_per">0</p>
+                                <button><i class="fas fa-delete delete-item"></i></button>
+                            </span>
+                        </div> -->
+
+                </article>
+
+            </section>
+
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
